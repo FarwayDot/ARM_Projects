@@ -1,0 +1,6 @@
+stm32f401re.c:4:6:Led_Init	4	static
+stm32f401re.c:20:6:Pulsador_Init	4	static
+stm32f401re.c:29:6:Led_On	4	static
+stm32f401re.c:34:6:Led_Off	4	static
+stm32f401re.c:39:6:Led_Toggle	4	static
+stm32f401re.c:44:9:Pulsador_Read	16	static

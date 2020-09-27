@@ -1,0 +1,10 @@
+17:12:04 **** Incremental Build of configuration Debug for project Clase5_Interrupciones ****
+make -j2 all 
+arm-none-eabi-size   Clase5_Interrupciones.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5088	     20	   1572	   6680	   1a18	Clase5_Interrupciones.elf
+Finished building: default.size.stdout
+ 
+
+17:12:06 Build Finished. 0 errors, 0 warnings. (took 1s.825ms)
+

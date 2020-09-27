@@ -1,0 +1,12 @@
+19:47:47 **** Incremental Build of configuration Debug for project Clase4_RCC ****
+make -j2 all 
+arm-none-eabi-gcc -o "Clase4_RCC.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\USER\Documents\ARM_Projects\Clase4_RCC\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Clase4_RCC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Core/Src/main.o: In function `main':
+C:/Users/USER/Documents/ARM_Projects/Clase4_RCC/Debug/../Core/Src/main.c:89: undefined reference to `Led_Init'
+C:/Users/USER/Documents/ARM_Projects/Clase4_RCC/Debug/../Core/Src/main.c:98: undefined reference to `Led_Toggle'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: Clase4_RCC.elf] Error 1
+"make -j2 all" terminated with exit code 2. Build might be incomplete.
+
+19:47:49 Build Failed. 3 errors, 0 warnings. (took 2s.301ms)
+

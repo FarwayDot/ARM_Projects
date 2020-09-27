@@ -1,0 +1,27 @@
+20:43:55 **** Incremental Build of configuration Debug for project Clase3_TecladoMatricial ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F401xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/USER/Documents/ARM_Projects/Librerias/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:72:7: warning: unused variable 'strcont' [-Wunused-variable]
+  char strcont[15];
+       ^~~~~~~
+../Core/Src/main.c:70:10: warning: unused variable 'i' [-Wunused-variable]
+  uint8_t i = 0;
+          ^
+arm-none-eabi-gcc -o "Clase3_TecladoMatricial.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\USER\Documents\ARM_Projects\Clase3_TecladoMatricial\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Clase3_TecladoMatricial.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Clase3_TecladoMatricial.elf
+ 
+arm-none-eabi-objdump -h -S  Clase3_TecladoMatricial.elf  > "Clase3_TecladoMatricial.list"
+arm-none-eabi-objcopy  -O binary  Clase3_TecladoMatricial.elf  "Clase3_TecladoMatricial.bin"
+Finished building: Clase3_TecladoMatricial.bin
+ 
+arm-none-eabi-size   Clase3_TecladoMatricial.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7456	     20	   1572	   9048	   2358	Clase3_TecladoMatricial.elf
+Finished building: default.size.stdout
+ 
+Finished building: Clase3_TecladoMatricial.list
+ 
+
+20:44:11 Build Finished. 0 errors, 2 warnings. (took 16s.406ms)
+

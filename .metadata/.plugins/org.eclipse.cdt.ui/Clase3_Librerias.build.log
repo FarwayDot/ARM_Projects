@@ -1,0 +1,10 @@
+19:51:18 **** Incremental Build of configuration Debug for project Clase3_Librerias ****
+make -j2 all 
+arm-none-eabi-size   Clase3_Librerias.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4956	     20	   1572	   6548	   1994	Clase3_Librerias.elf
+Finished building: default.size.stdout
+ 
+
+19:51:20 Build Finished. 0 errors, 0 warnings. (took 1s.423ms)
+

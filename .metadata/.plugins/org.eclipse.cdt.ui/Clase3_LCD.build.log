@@ -1,0 +1,31 @@
+22:25:46 **** Incremental Build of configuration Debug for project Clase3_LCD ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F401xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/USER/Documents/ARM_Projects/Librerias/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(strcont,"Contador: %d",i);
+     ^~~~~~~
+../Core/Src/main.c:124:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:124:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:126:22: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+     lcd_puts(strcont,strlen(strcont));
+                      ^~~~~~
+../Core/Src/main.c:126:22: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:126:22: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "Clase3_LCD.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\USER\Documents\ARM_Projects\Clase3_LCD\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Clase3_LCD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Clase3_LCD.elf
+ 
+arm-none-eabi-objdump -h -S  Clase3_LCD.elf  > "Clase3_LCD.list"
+arm-none-eabi-objcopy  -O binary  Clase3_LCD.elf  "Clase3_LCD.bin"
+Finished building: Clase3_LCD.bin
+Finished building: Clase3_LCD.list
+ 
+arm-none-eabi-size   Clase3_LCD.elf 
+ 
+   text	   data	    bss	    dec	    hex	filename
+   9272	    120	   1584	  10976	   2ae0	Clase3_LCD.elf
+Finished building: default.size.stdout
+ 
+
+22:25:51 Build Finished. 0 errors, 4 warnings. (took 5s.750ms)
+
