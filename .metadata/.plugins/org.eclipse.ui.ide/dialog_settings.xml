@@ -7,6 +7,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\USER\Documents\ARM_Projects\Clase5_Interrupciones_Encoder"/>
 			<item value="C:\Users\USER\Documents\ARM_Projects\Clase5_Interrupciones"/>
 			<item value="C:\Users\USER\Documents\ARM_Projects\Clase4_RCC_HSE"/>
 			<item value="C:\Users\USER\Documents\ARM_Projects\Clase4_RCCCLOCK"/>

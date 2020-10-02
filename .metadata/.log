@@ -3530,3 +3530,36 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.debug.core 4 5012 2020-09-26 17:13:56.304
 !MESSAGE Launch configuration Clase5_Interrupciones Debug at file:/C:/Users/USER/Documents/ARM_Projects/Clase5_Interrupciones/Clase5_Interrupciones%20Debug.launch does not exist.
+!SESSION 2020-10-01 20:50:41.775 -----------------------------------------------
+eclipse.buildId=Version 1.4.2
+java.version=1.8.0_242
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-10-01 20:51:42.643
+!MESSAGE Log4j initialized with config file C:\Users\USER\Documents\ARM_Projects\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-10-01 20:52:36.826
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-10-01 20:52:40.905
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-01 22:44:04.556
+!MESSAGE Indexed 'Clase5_Interrupciones_Encoder' (22 sources, 100 headers) in 23 sec: 6,958 declarations; 24,186 references; 2 unresolved inclusions; 29 syntax errors; 147 unresolved names (0.47 %)
+
+!ENTRY org.eclipse.jface 2 0 2020-10-01 23:05:36.890
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:764)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:543)
+	at org.eclipse.ui.navigator.CommonViewer.update(CommonViewer.java:512)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:1965)
+	at org.eclipse.ui.internal.navigator.resources.nested.NestedProjectsLabelProvider.lambda$2(NestedProjectsLabelProvider.java:87)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1609)
+	at java.lang.Thread.run(Thread.java:748)
